@@ -36,19 +36,19 @@ const Register = () => {
         const { name, email, work, add, mobile, desc, age } = inpval;
 
 
-        if (name == "") {
+        if (name === "") {
             alert("name is required")
-        } else if (email == "") {
+        } else if (email === "") {
             alert("email is required")
         } else if (!email.includes("@")) {
             alert("enter valid email")
-        } else if (work == "") {
+        } else if (work === "") {
             alert("work is required")
-        } else if (add == "") {
+        } else if (add === "") {
             alert("add is required")
-        } else if (mobile == "") {
+        } else if (mobile === "") {
             alert("mobile is required")
-        } else if (age == "") {
+        } else if (age === "") {
             alert("age is required")
         } else {
 
