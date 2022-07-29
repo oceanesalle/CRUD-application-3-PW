@@ -2,12 +2,17 @@ const express = require("express");
 const app = express();
 const mysql = require("mysql2");
 const cors = require("cors");
+require("./db/connection");
 
 const port = 8001;
 
 //app.get("/",(req,res)=>{
 //  res.send("server start")
 //  });
+
+// middleware
+app.use(express.json())
+app.use(cors());
 
 
 
